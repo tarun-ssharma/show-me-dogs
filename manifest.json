@@ -1,0 +1,18 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+"version": "1.0",
+"manifest_version": 2,
+"name": "Pooh-D-Sha",
+"chrome_url_overrides": {
+"newtab": "budeesha.html"
+},
+"browser_action": {
+"default_icon": {"16": "16by16_paw.jpg","48": "48by48_paw.jpg" }
+},
+"permissions": ["tabs","storage","<all_urls>"],
+"content_security_policy": "script-src 'self' https://dog.ceo/api/breeds/image/random; object-src 'self'",
+"background": {
+"scripts": ["background.js"]
+}
+}
